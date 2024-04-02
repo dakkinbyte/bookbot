@@ -13,14 +13,13 @@ def read_file(file_path):
 
 def letterCounter(text):
     d = {}
-    lowerCasedString = text.lower()
+    lowerCasedString = text.lower()#.split() - Didnt know you could do this. 
     for character in lowerCasedString: 
         if character not in d:
             d[character] = 1
         else:
             d[character] += 1 
-
-    
+    print(d)
 
 def stringConversion(text):
     words = input_string.split()
